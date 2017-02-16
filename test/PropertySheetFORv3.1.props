@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+	<IncludePath>D:\program files\opencv\build\include;D:\program files\opencv\build\include\opencv;D:\program files\opencv\build\include\opencv2;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath)</IncludePath>
+	<ReferencePath>D:\program files\opencv\build\x64\vc12\bin;D:\program files\opencv\build\x64\vc12\lib;$(ReferencePath)</ReferencePath>
+	<LibraryPath>D:\program files\opencv\build\x64\vc12\bin;D:\program files\opencv\build\x64\vc12\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link Condition="'$(Configuration)'=='Debug'">
+	<AdditionalDependencies>opencv_world310d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+	 </Link>
+	<Link Condition="'$(Configuration)'=='Release'">	 
+	<AdditionalDependencies>opencv_world310.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    	</Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
